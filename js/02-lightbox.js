@@ -13,10 +13,8 @@ function onGalleryContainerClick(evt) {
     if (!evt.target.classList.contains('gallery__image')) {
         return
     }
-    var lightbox = new SimpleLightbox('.gallery a', { captionsData: 'alt', captionDelay: 250 });
-
-
 }
+var lightbox = new SimpleLightbox('.gallery a', { captionsData: 'alt', captionDelay: 250 });
 
 function createGallery(galleryItems) {
     const markup = galleryItems.map(({ preview, original, description }) => {

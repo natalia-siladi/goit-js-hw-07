@@ -24,10 +24,11 @@ function onGalleryContainerClick(evt) {
     const ESC_KEY_CODE = 'Escape';
     if (evt.code === ESC_KEY_CODE) {
       instance.close()
-    }
-    if (instance.close()) {
       window.removeEventListener("keydown", onEscKeyPress);
     }
+    // if (instance.close()) {
+    //   window.removeEventListener("keydown", onEscKeyPress);
+    // }
     console.log(evt.code)
   }
 
